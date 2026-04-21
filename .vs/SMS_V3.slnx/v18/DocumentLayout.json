@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\uc_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\uc_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_students.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_students.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addstudentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addstudentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_teachers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_teachers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\uc_teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addteacherform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addteacherform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\addteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addteacherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\addclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addclassform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addclassform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\addclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\addclassform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\sms_v3\\uc_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\uc_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\uc_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|c:\\users\\faatimah\\source\\repos\\sms_v3\\sms_v3\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36C7FBC-7BA0-BAB7-1B74-29D7531A0AAE}|SMS_V3\\SMS_V3.csproj|solutionrelative:sms_v3\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 325,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_UserManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_UserManagement.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_UserManagement.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_UserManagement.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\UC_UserManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:39:18.798Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_Students.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Students.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Students.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:14:38.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_Students.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.Designer.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Students.Designer.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.Designer.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Students.Designer.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAvwK8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:13:22.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_Teachers.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Teachers.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Teachers.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAArwCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:34:30.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddStudentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddStudentForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.cs",
+              "RelativeToolTip": "SMS_V3\\AddStudentForm.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:11:34.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_Attendance.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Attendance.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Attendance.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Attendance.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\UC_Attendance.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T13:27:42.582Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\Form1.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\Form1.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\Form1.cs",
+              "RelativeToolTip": "SMS_V3\\Form1.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswF8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T23:18:30.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddStudentForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.Designer.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddStudentForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.Designer.cs",
+              "RelativeToolTip": "SMS_V3\\AddStudentForm.Designer.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAvwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:21:48.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_Teachers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.Designer.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Teachers.Designer.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.Designer.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Teachers.Designer.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAvwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:33:48.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddTeacherForm.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddTeacherForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.cs",
+              "RelativeToolTip": "SMS_V3\\AddTeacherForm.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:33:27.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddTeacherForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.Designer.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddTeacherForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.Designer.cs",
+              "RelativeToolTip": "SMS_V3\\AddTeacherForm.Designer.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAiwKsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:32:50.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddClassForm.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddClassForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.cs",
+              "RelativeToolTip": "SMS_V3\\AddClassForm.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAA/wE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T16:48:19.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddClassForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.Designer.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddClassForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.Designer.cs",
+              "RelativeToolTip": "SMS_V3\\AddClassForm.Designer.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwFQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:34:59.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UC_Classes.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Classes.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Classes.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Classes.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Classes.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T16:48:53.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UC_Attendance.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Attendance.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Attendance.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Attendance.cs",
+              "RelativeToolTip": "SMS_V3\\UC_Attendance.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T13:28:46.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\DatabaseHelper.cs",
+              "RelativeToolTip": "SMS_V3\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T13:26:44.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\Form1.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\Form1.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\Form1.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T23:18:23.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddStudentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddStudentForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddStudentForm.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\AddStudentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:11:30.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_Students.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Students.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Students.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\UC_Students.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:13:23.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_Teachers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Teachers.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Teachers.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\UC_Teachers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:34:29.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddTeacherForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddTeacherForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddTeacherForm.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\AddTeacherForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T21:32:47.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddClassForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\AddClassForm.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\AddClassForm.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\AddClassForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T16:34:00.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UC_Classes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Classes.cs",
+              "RelativeDocumentMoniker": "SMS_V3\\UC_Classes.cs",
+              "ToolTip": "C:\\Users\\Faatimah\\source\\repos\\SMS_V3\\SMS_V3\\UC_Classes.cs [Design]",
+              "RelativeToolTip": "SMS_V3\\UC_Classes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T16:33:32.096Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
