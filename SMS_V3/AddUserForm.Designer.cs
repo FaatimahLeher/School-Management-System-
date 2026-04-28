@@ -36,8 +36,6 @@
             label3 = new Label();
             cmbRole = new ComboBox();
             btnNewAccount = new Button();
-            label1 = new Label();
-            cmbStatus = new ComboBox();
             SuspendLayout();
             // 
             // lblTitle
@@ -57,7 +55,7 @@
             name.AutoSize = true;
             name.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             name.ForeColor = Color.FromArgb(64, 64, 64);
-            name.Location = new Point(33, 158);
+            name.Location = new Point(33, 178);
             name.Name = "name";
             name.Size = new Size(117, 28);
             name.TabIndex = 3;
@@ -68,7 +66,7 @@
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             txtUsername.ForeColor = Color.FromArgb(64, 64, 64);
-            txtUsername.Location = new Point(203, 162);
+            txtUsername.Location = new Point(212, 182);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(191, 24);
             txtUsername.TabIndex = 4;
@@ -78,7 +76,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label2.ForeColor = Color.FromArgb(64, 64, 64);
-            label2.Location = new Point(33, 230);
+            label2.Location = new Point(33, 253);
             label2.Name = "label2";
             label2.Size = new Size(112, 28);
             label2.TabIndex = 5;
@@ -89,7 +87,7 @@
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             txtPassword.ForeColor = Color.FromArgb(64, 64, 64);
-            txtPassword.Location = new Point(203, 230);
+            txtPassword.Location = new Point(203, 257);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(191, 24);
             txtPassword.TabIndex = 6;
@@ -100,7 +98,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(64, 64, 64);
-            label3.Location = new Point(33, 289);
+            label3.Location = new Point(33, 334);
             label3.Name = "label3";
             label3.Size = new Size(65, 28);
             label3.TabIndex = 7;
@@ -112,7 +110,7 @@
             cmbRole.FlatStyle = FlatStyle.Flat;
             cmbRole.FormattingEnabled = true;
             cmbRole.Items.AddRange(new object[] { "Admin", "Staff" });
-            cmbRole.Location = new Point(203, 293);
+            cmbRole.Location = new Point(203, 338);
             cmbRole.Name = "cmbRole";
             cmbRole.Size = new Size(191, 28);
             cmbRole.TabIndex = 8;
@@ -131,35 +129,11 @@
             btnNewAccount.UseVisualStyleBackColor = false;
             btnNewAccount.Click += btnNewAccount_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(33, 357);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 28);
-            label1.TabIndex = 10;
-            label1.Text = "Status";
-            // 
-            // cmbStatus
-            // 
-            cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbStatus.FlatStyle = FlatStyle.Flat;
-            cmbStatus.FormattingEnabled = true;
-            cmbStatus.Items.AddRange(new object[] { "Active,", "Inactive" });
-            cmbStatus.Location = new Point(203, 361);
-            cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(191, 28);
-            cmbStatus.TabIndex = 11;
-            // 
             // AddUserForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 553);
-            Controls.Add(cmbStatus);
-            Controls.Add(label1);
             Controls.Add(btnNewAccount);
             Controls.Add(cmbRole);
             Controls.Add(label3);
@@ -183,7 +157,5 @@
         public ComboBox cmbRole;
         public Label lblTitle;
         public TextBox txtPassword;
-        private Label label1;
-        public ComboBox cmbStatus;
     }
 }

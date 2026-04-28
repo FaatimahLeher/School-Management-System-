@@ -58,7 +58,7 @@
             lblTitle.TabIndex = 0;
             lblTitle.Text = "FACULTY DIRECTORY ";
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
-           
+            // 
             // btnAddTeacher
             // 
             btnAddTeacher.BackColor = Color.FromArgb(40, 167, 69);
@@ -107,7 +107,7 @@
             dgvTeachers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvTeachers.Size = new Size(900, 500);
             dgvTeachers.TabIndex = 2;
-
+            dgvTeachers.CellClick += dgvTeachers_CellContentClick;
             // 
             // colName
             // 
@@ -166,7 +166,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(900, 100);
             panel1.TabIndex = 0;
-            
             // 
             // UC_Teachers
             // 

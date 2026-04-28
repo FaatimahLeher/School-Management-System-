@@ -16,81 +16,120 @@ namespace SMS_V3
             InitializeComponent();
         }
 
-        private void dgvUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void UC_UserManagement_Load(object sender, EventArgs e)
         {
-            // Ignore clicks on header rows or empty space
-            if (e.RowIndex < 0) return;
-
-            // --- 1. DELETE LOGIC ---
-            if (dgvUsers.Columns[e.ColumnIndex].Name == "colDeleteUser")
+            if (UserSession.TeacherID != 0)
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to revoke access for this user?",
-                                                    "Security Warning",
-                                                    MessageBoxButtons.YesNo,
-                                                    MessageBoxIcon.Warning);
-                if (result == DialogResult.Yes)
+                this.Visible = false;
+                return;
+            }
+            LoadUsersFromDatabase();
+        }
+
+        private void LoadUsersFromDatabase()
+        {
+            dgvUsers.Rows.Clear();
+            string query = "SELECT Username, Role FROM Users";
+
+            try
+            {
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
-                    dgvUsers.Rows.RemoveAt(e.RowIndex);
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            dgvUsers.Rows.Add(
+                                reader["Username"]?.ToString() ?? "N/A",
+                                reader["Role"]?.ToString() ?? "User",
+                                "Edit",
+                                "Delete"
+                            );
+                        }
+                    }
                 }
             }
-
-            // --- 2. EDIT LOGIC ---
-            if (dgvUsers.Columns[e.ColumnIndex].Name == "colEditUser")
+            catch (Exception)
             {
-                AddUserForm editPopup = new AddUserForm();
+                // Removed 'ex' to fix CS0168 warning
+            }
+        }
 
-                // PULL: Transfer current row data into the Popup textboxes/combos
-                // Check these Column Names (colUsername, etc) against your Designer names!
-                editPopup.txtUsername.Text = dgvUsers.Rows[e.RowIndex].Cells["colUsername"].Value?.ToString();
-                editPopup.cmbRole.Text = dgvUsers.Rows[e.RowIndex].Cells["colRole"].Value?.ToString();
-                editPopup.cmbStatus.Text = dgvUsers.Rows[e.RowIndex].Cells["cmbStatus"].Value?.ToString();
+        private void dgvUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
 
-                editPopup.lblTitle.Text = "EDIT USER DETAILS";
+            if (dgvUsers.Columns[e.ColumnIndex].Name == "colDeleteUser")
+            {
+                string? username = dgvUsers.Rows[e.RowIndex].Cells["colUsername"].Value?.ToString();
 
-                if (editPopup.ShowDialog() == DialogResult.OK)
+                if (string.IsNullOrEmpty(username) || username == "admin") return;
+
+                if (MessageBox.Show($"Delete {username}?", "Warning", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    // PUSH: Transfer data from Popup back to the specific row
-                    dgvUsers.Rows[e.RowIndex].Cells["colUsername"].Value = editPopup.txtUsername.Text;
-                    dgvUsers.Rows[e.RowIndex].Cells["colRole"].Value = editPopup.cmbRole.Text;
-                    dgvUsers.Rows[e.RowIndex].Cells["cmbStatus"].Value = editPopup.cmbStatus.Text;
-
-                    dgvUsers.Refresh();
-                    MessageBox.Show("User updated successfully.");
+                    ExecuteDelete(username);
+                    LoadUsersFromDatabase();
                 }
+            }
+        }
+
+        private void ExecuteDelete(string user)
+        {
+            string sql = "DELETE FROM Users WHERE Username = @u";
+            using (SqlConnection conn = DatabaseHelper.GetConnection())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@u", user);
+                cmd.ExecuteNonQuery();
             }
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             AddUserForm popup = new AddUserForm();
-
             if (popup.ShowDialog() == DialogResult.OK)
             {
-                // 1. Validation 
-                if (string.IsNullOrWhiteSpace(popup.txtUsername.Text) || string.IsNullOrWhiteSpace(popup.txtPassword.Text))
+                SaveUserToDB(popup.txtUsername.Text, popup.txtPassword.Text, popup.cmbRole.Text);
+                LoadUsersFromDatabase();
+            }
+        }
+
+        private void SaveUserToDB(string u, string p, string r)
+        {
+            string sql = "INSERT INTO Users (Username, Password, Role) VALUES (@u, @p, @r)";
+
+            try
+            {
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
-                    MessageBox.Show("Username and Password cannot be empty.", "Security Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@u", u);
+                    cmd.Parameters.AddWithValue("@p", p);
+                    cmd.Parameters.AddWithValue("@r", r);
+
+                    cmd.ExecuteNonQuery();
                 }
-
-                dgvUsers.Rows.Add(
-                popup.txtUsername.Text,
-                popup.cmbRole.Text,      // This pulls what the user picked in the popup
-                DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
-                popup.cmbStatus.Text,    // This pulls "Active" or "Inactive"
-                "Edit",
-                "Delete");
             }
-          
-
-                dgvUsers.ClearSelection();
+            catch (SqlException ex)
+            {
+                // Error numbers 2627 and 2601 relate to Primary Key/Unique Constraint violations
+                if (ex.Number == 2627 || ex.Number == 2601)
+                {
+                    MessageBox.Show("This username already exists. Please choose a different name.", "Duplicate User");
+                }
+                else
+                {
+                    MessageBox.Show("Database error: " + ex.Message);
+                }
             }
-        
+        }
 
-        // Prevents the "DataGridViewComboBoxCell value is not valid" crash
         private void dgvUsers_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
-            // Do not remove this. It handles data mismatches in ComboBox columns silently.
             e.ThrowException = false;
         }
     }

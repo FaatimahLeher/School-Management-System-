@@ -67,3 +67,4 @@ C:\Users\Faatimah\source\repos\SMS_V3\SMS_V3\obj\Debug\net10.0-windows\refint\SM
 C:\Users\Faatimah\source\repos\SMS_V3\SMS_V3\obj\Debug\net10.0-windows\SMS_V3.pdb
 C:\Users\Faatimah\source\repos\SMS_V3\SMS_V3\obj\Debug\net10.0-windows\SMS_V3.genruntimeconfig.cache
 C:\Users\Faatimah\source\repos\SMS_V3\SMS_V3\obj\Debug\net10.0-windows\ref\SMS_V3.dll
+C:\Users\Faatimah\source\repos\SMS_V3\SMS_V3\obj\Debug\net10.0-windows\SMS_V3.sourcelink.json

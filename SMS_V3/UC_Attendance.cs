@@ -14,44 +14,45 @@ namespace SMS_V3
         public UC_Attendance()
         {
             InitializeComponent();
-            // Sets the label to show today's date automatically
             lblDate.Text = "Date: " + DateTime.Now.ToString("dd MMMM yyyy");
         }
 
         private void UC_Attendance_Load(object sender, EventArgs e)
         {
-            // 1. Clear the old rows
             dgvAttendance.Rows.Clear();
 
-            // 2. Define the SQL query
-            string query = "SELECT FirstName, LastName, StudentID FROM Students";
+            string query = (UserSession.TeacherID == 0)
+                ? "SELECT FirstName, LastName, StudentID FROM Students"
+                : "SELECT FirstName, LastName, StudentID FROM Students WHERE AssignedTeacherID = @tID";
 
             try
             {
-                // 3. Use your new DatabaseHelper to open the connection
                 using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        // The reader finds the data in SQL using the SQL names:
-                        string fName = reader["FirstName"].ToString() ??"";
-                        string lName = reader["LastName"].ToString() ??"";
-                        string sID = reader["StudentID"].ToString() ??"";
+                        if (UserSession.TeacherID != 0)
+                            cmd.Parameters.AddWithValue("@tID", UserSession.TeacherID);
 
-                        // The Grid puts them into colName, colSurname, and colID automatically 
-                        // based on the order they appear in your Designer:
-                        dgvAttendance.Rows.Add(fName, lName, sID, false);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                dgvAttendance.Rows.Add(
+                                    reader["FirstName"]?.ToString() ?? "",
+                                    reader["LastName"]?.ToString() ?? "",
+                                    reader["StudentID"]?.ToString() ?? "",
+                                    false
+                                );
+                            }
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // If there is still a version error, it will show up here
-                MessageBox.Show("Database Connection Failed: " + ex.Message);
+                MessageBox.Show("Loading Error: " + ex.Message);
             }
         }
 
@@ -60,41 +61,42 @@ namespace SMS_V3
             int presentCount = 0;
             int totalStudents = 0;
 
-            foreach (DataGridViewRow row in dgvAttendance.Rows)
+            try
             {
-                // Skip the empty "ghost row" at the very bottom
-                if (row.IsNewRow) continue;
-
-                totalStudents++;
-
-                // IMPORTANT: Ensure the column name "cPresent" matches your Designer (Edit Columns)
-                bool isPresent = false;
-                if (row.Cells["chbPresent"].Value != null)
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
-                    isPresent = Convert.ToBoolean(row.Cells["chbPresent"].Value);
+                    conn.Open();
+                    foreach (DataGridViewRow row in dgvAttendance.Rows)
+                    {
+                        if (row.IsNewRow || row.Cells[2].Value == null) continue;
+
+                        totalStudents++;
+                        string sID = row.Cells[2].Value.ToString()!; // '!' fixes the warning
+
+                        bool isPresent = false;
+                        if (row.Cells[3].Value != null)
+                            isPresent = Convert.ToBoolean(row.Cells[3].Value);
+
+                        string status = isPresent ? "Present" : "Absent";
+                        if (isPresent) presentCount++;
+
+                        string sql = "INSERT INTO AttendanceRecords (StudentID, Status, Date) VALUES (@id, @status, GETDATE())";
+                        using (SqlCommand cmd = new SqlCommand(sql, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@id", sID);
+                            cmd.Parameters.AddWithValue("@status", status);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
                 }
 
-                if (isPresent)
-                {
-                    presentCount++;
-                    // FUTURE DB LOGIC: 
-                    // string id = row.Cells["colID"].Value.ToString();
-                    // SaveToDatabase(id, DateTime.Now, "Present");
-                }
+                MessageBox.Show($"Success! Attendance saved.\nPresent: {presentCount}\nAbsent: {totalStudents - presentCount}",
+                                "HIT Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            int absentCount = totalStudents - presentCount;
-
-            MessageBox.Show($"Attendance for {DateTime.Now.ToString("dd MMM yyyy")} submitted!\n\n" +
-                            $"Total Students: {totalStudents}\n" +
-                            $"Present: {presentCount}\n" +
-                            $"Absent: {absentCount}",
-                            "HIT Attendance System",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Save Error: " + ex.Message);
+            }
         }
-
-        // Keep these empty or delete them if you aren't using them
-        private void dgvAttendance_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
     }
 }

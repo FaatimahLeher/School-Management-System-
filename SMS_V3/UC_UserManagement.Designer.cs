@@ -37,7 +37,6 @@
             colUsername = new DataGridViewTextBoxColumn();
             colRole = new DataGridViewComboBoxColumn();
             colLogin = new DataGridViewTextBoxColumn();
-            cmbStatus = new DataGridViewComboBoxColumn();
             colEditUser = new DataGridViewButtonColumn();
             colDeleteUser = new DataGridViewButtonColumn();
             pnlHeader.SuspendLayout();
@@ -97,7 +96,7 @@
             dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvUsers.ColumnHeadersHeight = 45;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvUsers.Columns.AddRange(new DataGridViewColumn[] { colUsername, colRole, colLogin, cmbStatus, colEditUser, colDeleteUser });
+            dgvUsers.Columns.AddRange(new DataGridViewColumn[] { colUsername, colRole, colLogin, colEditUser, colDeleteUser });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
@@ -139,14 +138,6 @@
             colLogin.Name = "colLogin";
             colLogin.ReadOnly = true;
             // 
-            // cmbStatus
-            // 
-            cmbStatus.HeaderText = "Status";
-            cmbStatus.Items.AddRange(new object[] { "Active,", "Inactive" });
-            cmbStatus.MinimumWidth = 6;
-            cmbStatus.Name = "cmbStatus";
-            cmbStatus.ReadOnly = true;
-            // 
             // colEditUser
             // 
             colEditUser.HeaderText = "Edit";
@@ -183,7 +174,6 @@
         private DataGridViewTextBoxColumn colUsername;
         private DataGridViewComboBoxColumn colRole;
         private DataGridViewTextBoxColumn colLogin;
-        private DataGridViewComboBoxColumn cmbStatus;
         private DataGridViewButtonColumn colEditUser;
         private DataGridViewButtonColumn colDeleteUser;
     }

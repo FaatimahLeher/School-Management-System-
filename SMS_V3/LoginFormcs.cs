@@ -15,27 +15,35 @@ namespace SMS_V3
             InitializeComponent();
         }
 
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           
-            // Hardcoded credentials for now (We will move these to the DB tomorrow)
-            string username = "admin";
-            string password = "password123";
+            string inputUser = txtUsername.Text;
+            string inputPass = txtPassword.Text;
 
-            if (txtUsername.Text == username && txtPassword.Text == password)
+            // 1. Check for Admin (Staff)
+            if (inputUser == "admin" && inputPass == "password123")
             {
-                MessageBox.Show("Login Successful!", "Security System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UserSession.TeacherID = 0; // 0 can represent "Super Admin"
+                UserSession.TeacherName = "Administrator";
 
-                // This is the important part:
-                this.Hide();                // Hide the login form
-                Form1 dashboard = new Form1();
-                dashboard.Show();           // Show your main dashboard
+                ProceedToDashboard("Welcome, Admin!");
+            }
+            // 2. Check for Teacher A (Class 5)
+            else if (inputUser == "teacher1" && inputPass == "teach123")
+            {
+                // This ID must match the 'AssignedTeacherID' in your SQL Students table
+                UserSession.TeacherID = 1;
+                UserSession.TeacherName = "Mr. Sibanda";
+
+                ProceedToDashboard("Welcome, Mr. Sibanda!");
+            }
+            // 3. Check for Teacher B (Class 6)
+            else if (inputUser == "teacher2" && inputPass == "teach456")
+            {
+                UserSession.TeacherID = 2;
+                UserSession.TeacherName = "Mrs. Moyo";
+
+                ProceedToDashboard("Welcome, Mrs. Moyo!");
             }
             else
             {
@@ -44,6 +52,31 @@ namespace SMS_V3
                 txtUsername.Focus();
             }
         }
-    }
-    }
 
+        // Helper method to keep the code clean
+        private void ProceedToDashboard(string message)
+        {
+            MessageBox.Show(message, "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+            Form1 dashboard = new Form1();
+            dashboard.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginFormcs login = new LoginFormcs();
+            login.Show();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

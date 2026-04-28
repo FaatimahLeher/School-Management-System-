@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlSidebar = new Panel();
+            btnLogout = new Button();
             btnUserManagement = new Button();
             btnAttendance = new Button();
             btnClasses = new Button();
@@ -36,6 +37,7 @@
             btnStudents = new Button();
             btnDashboard = new Button();
             pnlHeader = new Panel();
+            label6 = new Label();
             pnlMain = new Panel();
             panel5 = new Panel();
             label5 = new Label();
@@ -53,6 +55,7 @@
             lblNotificationsCount = new Label();
             label4 = new Label();
             pnlSidebar.SuspendLayout();
+            pnlHeader.SuspendLayout();
             pnlMain.SuspendLayout();
             panel5.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -65,6 +68,7 @@
             // pnlSidebar
             // 
             pnlSidebar.BackColor = Color.FromArgb(45, 45, 48);
+            pnlSidebar.Controls.Add(btnLogout);
             pnlSidebar.Controls.Add(btnUserManagement);
             pnlSidebar.Controls.Add(btnAttendance);
             pnlSidebar.Controls.Add(btnClasses);
@@ -77,6 +81,20 @@
             pnlSidebar.Padding = new Padding(20);
             pnlSidebar.Size = new Size(220, 553);
             pnlSidebar.TabIndex = 0;
+            // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.FromArgb(220, 53, 69);
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(43, 462);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(110, 44);
+            btnLogout.TabIndex = 8;
+            btnLogout.Text = "LOG OUT ";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
             // 
             // btnUserManagement
             // 
@@ -172,16 +190,30 @@
             btnDashboard.Text = "Dashboard";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
             btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // pnlHeader
             // 
             pnlHeader.BackColor = Color.White;
+            pnlHeader.Controls.Add(label6);
             pnlHeader.Dock = DockStyle.Top;
             pnlHeader.Location = new Point(220, 0);
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Padding = new Padding(20);
             pnlHeader.Size = new Size(662, 60);
             pnlHeader.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(64, 64, 64, 64);
+            label6.Location = new Point(234, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(173, 38);
+            label6.TabIndex = 0;
+            label6.Text = "EDU-TRACK";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlMain
             // 
@@ -201,10 +233,10 @@
             panel5.BackColor = Color.White;
             panel5.Controls.Add(label5);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(20, 170);
+            panel5.Location = new Point(20, 196);
             panel5.Margin = new Padding(3, 30, 3, 3);
             panel5.Name = "panel5";
-            panel5.Size = new Size(622, 303);
+            panel5.Size = new Size(622, 277);
             panel5.TabIndex = 1;
             // 
             // label5
@@ -234,7 +266,7 @@
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(622, 150);
+            tableLayoutPanel1.Size = new Size(622, 176);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -246,7 +278,7 @@
             panel1.Location = new Point(10, 10);
             panel1.Margin = new Padding(10);
             panel1.Name = "panel1";
-            panel1.Size = new Size(135, 130);
+            panel1.Size = new Size(135, 156);
             panel1.TabIndex = 0;
             // 
             // lblTotalStudents
@@ -254,7 +286,7 @@
             lblTotalStudents.AutoSize = true;
             lblTotalStudents.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalStudents.ForeColor = Color.White;
-            lblTotalStudents.Location = new Point(3, 71);
+            lblTotalStudents.Location = new Point(3, 86);
             lblTotalStudents.Name = "lblTotalStudents";
             lblTotalStudents.Size = new Size(43, 50);
             lblTotalStudents.TabIndex = 1;
@@ -281,7 +313,7 @@
             panel2.Location = new Point(165, 10);
             panel2.Margin = new Padding(10);
             panel2.Name = "panel2";
-            panel2.Size = new Size(135, 130);
+            panel2.Size = new Size(135, 156);
             panel2.TabIndex = 1;
             // 
             // lblTotalTeachers
@@ -289,7 +321,7 @@
             lblTotalTeachers.AutoSize = true;
             lblTotalTeachers.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalTeachers.ForeColor = Color.White;
-            lblTotalTeachers.Location = new Point(3, 71);
+            lblTotalTeachers.Location = new Point(12, 86);
             lblTotalTeachers.Name = "lblTotalTeachers";
             lblTotalTeachers.Size = new Size(43, 50);
             lblTotalTeachers.TabIndex = 1;
@@ -316,7 +348,7 @@
             panel3.Location = new Point(320, 10);
             panel3.Margin = new Padding(10);
             panel3.Name = "panel3";
-            panel3.Size = new Size(135, 130);
+            panel3.Size = new Size(135, 156);
             panel3.TabIndex = 2;
             // 
             // lblAttendanceCount
@@ -324,7 +356,7 @@
             lblAttendanceCount.AutoSize = true;
             lblAttendanceCount.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAttendanceCount.ForeColor = Color.White;
-            lblAttendanceCount.Location = new Point(3, 71);
+            lblAttendanceCount.Location = new Point(13, 86);
             lblAttendanceCount.Name = "lblAttendanceCount";
             lblAttendanceCount.Size = new Size(43, 50);
             lblAttendanceCount.TabIndex = 1;
@@ -335,7 +367,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(3, 10);
+            label3.Location = new Point(0, 10);
             label3.Name = "label3";
             label3.Size = new Size(165, 23);
             label3.TabIndex = 0;
@@ -350,7 +382,7 @@
             panel4.Location = new Point(475, 10);
             panel4.Margin = new Padding(10);
             panel4.Name = "panel4";
-            panel4.Size = new Size(137, 130);
+            panel4.Size = new Size(137, 156);
             panel4.TabIndex = 3;
             // 
             // lblNotificationsCount
@@ -358,7 +390,7 @@
             lblNotificationsCount.AutoSize = true;
             lblNotificationsCount.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblNotificationsCount.ForeColor = Color.White;
-            lblNotificationsCount.Location = new Point(3, 71);
+            lblNotificationsCount.Location = new Point(14, 86);
             lblNotificationsCount.Name = "lblNotificationsCount";
             lblNotificationsCount.Size = new Size(43, 50);
             lblNotificationsCount.TabIndex = 2;
@@ -386,6 +418,8 @@
             Name = "Form1";
             Text = "Form1";
             pnlSidebar.ResumeLayout(false);
+            pnlHeader.ResumeLayout(false);
+            pnlHeader.PerformLayout();
             pnlMain.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
@@ -427,5 +461,7 @@
         private Panel panel5;
         private Label label5;
         private Button btnUserManagement;
+        private Label label6;
+        private Button btnLogout;
     }
 }
